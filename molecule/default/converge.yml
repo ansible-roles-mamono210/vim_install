@@ -1,9 +1,8 @@
 ---
 - name: Converge
   hosts: all
-  become: True
+  become: true
   vars:
     ansible_user: ansible
-    vimrc_dir: /home/ansible
   roles:
-    - role: vim
+    - role: vim_install

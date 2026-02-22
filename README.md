@@ -1,9 +1,9 @@
-[![CircleCI](https://circleci.com/gh/ansible-roles-mamono210/vim/tree/main.svg?style=svg)](https://circleci.com/gh/ansible-roles-mamono210/vim/tree/main)
+[![CircleCI](https://circleci.com/gh/ansible-roles-mamono210/vim_install/tree/main.svg?style=svg)](https://circleci.com/gh/ansible-roles-mamono210/vim_install/tree/main)
 
 Role Description
 =========
 
-Installs vim for CentOS7/Stream8.
+Installs vim for CentOS Stream 9.
 
 Requirements
 ------------
@@ -14,17 +14,6 @@ Role Variables
 --------------
 
 ```YAML
-# Directory where the .vimrc file would be created
-vimrc_dir: /root
-
-# Name of the group of the .vimrc file
-vimrc_group: root
-
-# The permissions the .vimrc file
-vimrc_mode: '0644'
-
-# Name of the user of the .vimrc file
-vimrc_owner: root
 ```
 
 Dependencies
@@ -40,7 +29,7 @@ Example Playbook
 - hosts: all
   become: true
   roles:
-    - vim
+    - vim_install
 ```
 
 License

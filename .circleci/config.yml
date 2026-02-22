@@ -88,13 +88,12 @@ workflows:
           matrix:
             parameters:
               checkout-path:
-                - 'vim'
+                - 'vim_install'
               molecule-executor-image:
                 - 'ghcr.io/docker-images-mamono210/circleci-executors/molecule-docker:latest'
               molecule-test-image:
                 - 'ghcr.io/docker-images-mamono210/ansible-test/centos-stream9:latest'
               molecule-scenario-name:
                 - 'default'
-                - 'user_test'
           requires:
             - ansible-lint

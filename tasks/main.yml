@@ -17,12 +17,3 @@
     line: alias vi='vim'
     state: present
   when: vim_installed is failed
-
-- name: "Create the .vimrc file under {{ vimrc_dir }}"
-  ansible.builtin.template:
-    src: .vimrc
-    dest: "{{ vimrc_dir }}/.vimrc"
-    group: "{{ vimrc_group }}"
-    owner: "{{ vimrc_owner }}"
-    mode: "{{ vimrc_mode }}"
-  when: vim_installed is failed
