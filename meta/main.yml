@@ -6,9 +6,9 @@ galaxy_info:
   description: vim installation for Linux.
   galaxy_tags: []
   license: "license (BSD, MIT)"
-  min_ansible_version: 13.0.0
-  role_name: vim
+  min_ansible_version: 13.4.0
   platforms:
     - name: EL
       release:
         - 9
+  role_name: vim_install
